@@ -34,12 +34,15 @@ Partial Class Form1
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.BtnSterge = New System.Windows.Forms.Button()
         Me.BtnModifica = New System.Windows.Forms.Button()
+        Me.TxtFiltreaza = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.BtnSorteaza = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BtnIncarca
         '
-        Me.BtnIncarca.Location = New System.Drawing.Point(392, 263)
+        Me.BtnIncarca.Location = New System.Drawing.Point(394, 253)
         Me.BtnIncarca.Name = "BtnIncarca"
         Me.BtnIncarca.Size = New System.Drawing.Size(142, 27)
         Me.BtnIncarca.TabIndex = 27
@@ -48,7 +51,7 @@ Partial Class Form1
         '
         'BtnSalveaza
         '
-        Me.BtnSalveaza.Location = New System.Drawing.Point(392, 312)
+        Me.BtnSalveaza.Location = New System.Drawing.Point(394, 302)
         Me.BtnSalveaza.Name = "BtnSalveaza"
         Me.BtnSalveaza.Size = New System.Drawing.Size(142, 27)
         Me.BtnSalveaza.TabIndex = 26
@@ -57,7 +60,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(392, 212)
+        Me.Button1.Location = New System.Drawing.Point(394, 202)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(142, 27)
         Me.Button1.TabIndex = 25
@@ -67,7 +70,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(36, 111)
+        Me.Label3.Location = New System.Drawing.Point(38, 101)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(49, 13)
         Me.Label3.TabIndex = 24
@@ -76,7 +79,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(36, 74)
+        Me.Label2.Location = New System.Drawing.Point(38, 64)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 23
@@ -85,7 +88,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(36, 36)
+        Me.Label1.Location = New System.Drawing.Point(38, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(16, 13)
         Me.Label1.TabIndex = 22
@@ -93,21 +96,21 @@ Partial Class Form1
         '
         'TxtPrenume
         '
-        Me.TxtPrenume.Location = New System.Drawing.Point(92, 111)
+        Me.TxtPrenume.Location = New System.Drawing.Point(94, 101)
         Me.TxtPrenume.Name = "TxtPrenume"
         Me.TxtPrenume.Size = New System.Drawing.Size(129, 20)
         Me.TxtPrenume.TabIndex = 21
         '
         'txtNume
         '
-        Me.txtNume.Location = New System.Drawing.Point(92, 71)
+        Me.txtNume.Location = New System.Drawing.Point(94, 61)
         Me.txtNume.Name = "txtNume"
         Me.txtNume.Size = New System.Drawing.Size(129, 20)
         Me.txtNume.TabIndex = 20
         '
         'txtId
         '
-        Me.txtId.Location = New System.Drawing.Point(92, 33)
+        Me.txtId.Location = New System.Drawing.Point(94, 23)
         Me.txtId.Name = "txtId"
         Me.txtId.Size = New System.Drawing.Size(129, 20)
         Me.txtId.TabIndex = 19
@@ -115,14 +118,14 @@ Partial Class Form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(34, 152)
+        Me.DataGridView1.Location = New System.Drawing.Point(36, 142)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(341, 242)
         Me.DataGridView1.TabIndex = 18
         '
         'BtnSterge
         '
-        Me.BtnSterge.Location = New System.Drawing.Point(561, 212)
+        Me.BtnSterge.Location = New System.Drawing.Point(563, 202)
         Me.BtnSterge.Name = "BtnSterge"
         Me.BtnSterge.Size = New System.Drawing.Size(142, 27)
         Me.BtnSterge.TabIndex = 28
@@ -131,18 +134,46 @@ Partial Class Form1
         '
         'BtnModifica
         '
-        Me.BtnModifica.Location = New System.Drawing.Point(561, 263)
+        Me.BtnModifica.Location = New System.Drawing.Point(563, 253)
         Me.BtnModifica.Name = "BtnModifica"
         Me.BtnModifica.Size = New System.Drawing.Size(142, 27)
         Me.BtnModifica.TabIndex = 29
         Me.BtnModifica.Text = "Modifica"
         Me.BtnModifica.UseVisualStyleBackColor = True
         '
+        'TxtFiltreaza
+        '
+        Me.TxtFiltreaza.Location = New System.Drawing.Point(150, 399)
+        Me.TxtFiltreaza.Name = "TxtFiltreaza"
+        Me.TxtFiltreaza.Size = New System.Drawing.Size(171, 20)
+        Me.TxtFiltreaza.TabIndex = 30
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(70, 402)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(76, 13)
+        Me.Label4.TabIndex = 31
+        Me.Label4.Text = "Filtreaza dupa:"
+        '
+        'BtnSorteaza
+        '
+        Me.BtnSorteaza.Location = New System.Drawing.Point(563, 305)
+        Me.BtnSorteaza.Name = "BtnSorteaza"
+        Me.BtnSorteaza.Size = New System.Drawing.Size(142, 23)
+        Me.BtnSorteaza.TabIndex = 32
+        Me.BtnSorteaza.Text = "Sorteaza"
+        Me.BtnSorteaza.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.BtnSorteaza)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.TxtFiltreaza)
         Me.Controls.Add(Me.BtnModifica)
         Me.Controls.Add(Me.BtnSterge)
         Me.Controls.Add(Me.BtnIncarca)
@@ -175,4 +206,7 @@ Partial Class Form1
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents BtnSterge As Button
     Friend WithEvents BtnModifica As Button
+    Friend WithEvents TxtFiltreaza As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents BtnSorteaza As Button
 End Class

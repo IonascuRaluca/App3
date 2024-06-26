@@ -1,5 +1,8 @@
 ﻿Public Class Form1
     Dim dt As New DataTable
+    Dim dv As New DataView(dt)
+    Dim numarApasari = 0
+    Dim filtru As String
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         dt.Rows.Add(txtId.Text, txtNume.Text, TxtPrenume.Text)
@@ -64,4 +67,27 @@
         DataGridView1.SelectedRows(0).Cells(2).Value = TxtPrenume.Text
 
     End Sub
+    Private Sub BtnSorteaza_Click(sender As Object, e As EventArgs) Handles BtnSorteaza.Click
+
+        numarApasari += 1
+
+        If numarApasari = 1 Then
+            dv.Sort = "Nume ASC"
+        ElseIf numarApasari = 2 Then
+            dv.Sort = "Id ASC"
+        End If
+
+        DataGridView1.DataSource = dv
+
+    End Sub
+    Private Sub TxtFiltreaza_TextChanged(sender As Object, e As EventArgs) Handles TxtFiltreaza.TextChanged
+
+        filtru = TxtFiltreaza.Text
+        dv.RowFilter = $"Prenume LIKE '%{filtru}%'"
+
+        DataGridView1.DataSource = dv
+
+    End Sub
+
+
 End Class
