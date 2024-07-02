@@ -1,0 +1,75 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Detalii" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Detalii">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" type="xs:int" minOccurs="0" />
+                <xs:element name="Nume" type="xs:string" minOccurs="0" />
+                <xs:element name="Prenume" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Detalii>
+    <Id>1</Id>
+    <Nume>Ion</Nume>
+    <Prenume>Alexandra</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>2</Id>
+    <Nume>Ionascu</Nume>
+    <Prenume>Iulia</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>3</Id>
+    <Nume>Ciobotaru</Nume>
+    <Prenume>Narcis</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>4</Id>
+    <Nume>Constantin</Nume>
+    <Prenume>Paul</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>5</Id>
+    <Nume>Silion</Nume>
+    <Prenume>Gabriel</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>6</Id>
+    <Nume>Pruteanu</Nume>
+    <Prenume>Alexandru</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>7</Id>
+    <Nume>Serban</Nume>
+    <Prenume>Christin</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>8</Id>
+    <Nume>Mehedinti</Nume>
+    <Prenume>Oana</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>9</Id>
+    <Nume>Nanau</Nume>
+    <Prenume>Georgiana</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>10</Id>
+    <Nume>Neculache</Nume>
+    <Prenume>Maria</Prenume>
+  </Detalii>
+  <Detalii>
+    <Id>11</Id>
+    <Nume>Serban</Nume>
+    <Prenume>Alexandra</Prenume>
+  </Detalii>
+</NewDataSet>
